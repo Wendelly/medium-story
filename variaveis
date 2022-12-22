@@ -1,0 +1,13 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import requests
+import json
+!pip install geopandas;
+df=pd.read_csv('http://data.insideairbnb.com/italy/lombardia/bergamo/2022-09-26/visualisations/listings.csv')
+
+
+print("entradas: \t {}".format(df.shape[0]))
+print("variaveis: \t {}".format(df.shape[1]))
+
+display(df.dtypes)
